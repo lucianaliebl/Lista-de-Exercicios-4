@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+    int tentativas;
+    int pessoas;
+    char idiomaX [21];
+    char idiomaY [21]; 
+    int mesmoIdioma = 0; 
+
+    scanf("%d", &tentativas);
+
+    while(tentativas--){
+        scanf("%d", &pessoas);
+        scanf("%s\n", &idiomaX);
+
+        mesmoIdioma = 1; 
+         
+        for(int i = 1; i < pessoas; i++){
+            scanf("%s\n", idiomaY);
+            if(strcmp(idiomaX, idiomaY) == 0){
+                mesmoIdioma = 1; 
+            }else{
+                mesmoIdioma = 0;
+            }
+        }
+
+        if(mesmoIdioma){
+            printf("%s\n", idiomaX); 
+        }else{
+            printf("ingles\n");
+        }
+    }
+  
+    return 0;
+}
