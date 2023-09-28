@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+    int casos;
+    char nome [50];
+    int forca;
+
+    scanf("%d", &casos);
+
+    while(casos > 0){
+        scanf("%s %d\n", nome, &forca); // como fazer para na entrada pular linha?
+        if(strcmp(nome,"Thor") == 0){
+           printf("Y\n");
+        }else{
+           printf("N\n");
+        }
+    casos--;
+    }
+  
+    return 0;
+}
