@@ -1,0 +1,35 @@
+#include <string.h>
+#include <stdio.h>
+
+int main(){
+    
+    int teste;
+    char nomeA[100];
+    char nomeB[100];
+    char escolhaA[10];
+    char escolhaB[10]; 
+    int numeroA, numeroB, soma; 
+
+    
+    scanf("%d", &teste);
+
+    while(teste > 0){
+       
+       scanf("%s %s %s %s", nomeA, escolhaA, nomeB, escolhaB);
+       scanf("%d %d", &numeroA, &numeroB); 
+
+       soma = numeroA + numeroB;
+
+       if(strcmp(escolhaA, "PAR") == 0 && soma%2 == 0){
+           printf("%s\n", nomeA);
+       } else if(strcmp(escolhaA, "IMPAR") == 0 && soma%2 != 0){
+           printf("%s\n", nomeA);
+       } else{
+           printf("%s\n", nomeB); 
+       } 
+
+    teste--;
+    }
+
+    return 0;
+}
