@@ -9,7 +9,7 @@ int main(){
     scanf("%d", &casos);
 
     while(casos > 0){
-        scanf("%s %d\n", nome, &forca); // como fazer para na entrada pular linha?
+        scanf("%s %d\n", nome, &forca); // dá para usar o scanf porque os nomes não tem espaços
         if(strcmp(nome,"Thor") == 0){
            printf("Y\n");
         }else{
