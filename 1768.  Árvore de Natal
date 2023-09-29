@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+    
+    int tamanhoArvore; 
+    int meioArvore; 
+
+    scanf("%d", &tamanhoArvore);
+    
+    meioArvore = tamanhoArvore/2;
+
+    int numLinhas = tamanhoArvore/2;
+
+    for(int linhaArvore = 0; linhaArvore < )
+    for(int espacosImpressos = meioArvores; espacosImpressos >= 0; espacosImpressos--){
+        printf(" "); 
+    }
+    for(int i = 0; i < meioArvore; i++){  // 9/2 = 4; o i repete 4 vezes antes aparecer o * do meio 
+        printf(" ");
+    }
+    printf("*\n");
+
+    for (int i = 0; i < meioArvore - 1; i++){
+        printf(" ");
+    }
+    printf("***\n");
+    
+
+    for(int i = 0; i < tamanhoArvore; i++){ 
+        printf("*");
+    }
+    
+    printf("\n");
+
+    
+    for (int i = 0; i < meioArvore; i++){  // 9/2 = 4; o i repete 4 vezes antes aparecer o * do meio 
+        printf(" ");
+    }
+    printf("*\n");
+
+    for (int i = 0; i < meioArvore - 1; i++){
+        printf(" ");
+    }
+    printf("***\n");
+
+
+    return 0; 
+}
