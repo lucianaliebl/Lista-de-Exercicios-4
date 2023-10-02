@@ -1,0 +1,45 @@
+#include <stdio.h>
+ 
+int main(){
+    
+    int tamanhoArvore;
+
+    while(scanf("%d", &tamanhoArvore) == 1){
+      int meioArvore = tamanhoArvore/2;
+      int numLinhas = meioArvore + 1;
+      int numEspacos = meioArvore; 
+      int numAsteriscos = 1; 
+
+      
+      // copa da árvore
+      for(int linhaArvore = 0; linhaArvore < numLinhas; linhaArvore++){  // percorre linha por linha da copa 
+            // imprime os espaços de cada linha
+            for(int espacosImpressos = 0; espacosImpressos < numEspacos; espacosImpressos++){
+                printf(" ");
+            }
+            // imprime os asteriscos de cada linha
+            for(int asteriscosImpressos = 0; asteriscosImpressos < numAsteriscos; asteriscosImpressos++){
+                printf("*");
+            }
+            printf("\n"); 
+            numAsteriscos = numAsteriscos + 2;
+            numEspacos--;
+      }
+
+      
+      // tronco árvore
+      for(int i = 0; i < meioArvore; i++){
+        printf(" ");
+      }
+      printf("*\n");
+
+      for(int i = 0; i < meioArvore - 1; i++){
+        printf(" ");
+      }
+      printf("***\n\n");
+
+    } 
+  
+    return 0;
+}
+
