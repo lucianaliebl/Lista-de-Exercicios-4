@@ -4,10 +4,10 @@
 int main(){
     
     int teste;
-    char nomeA[100];
-    char nomeB[100];
-    char escolhaA[10];
-    char escolhaB[10]; 
+    char nomeA[101]; // colocar um espaço a mais para o caractere para o /0;
+    char nomeB[101];
+    char escolhaA[6]; // ímpar tem 5 caracteres, colocar um espaço a mais para o /0;
+    char escolhaB[6]; 
     int numeroA, numeroB, soma; 
 
     
@@ -15,7 +15,7 @@ int main(){
 
     while(teste > 0){
        
-       scanf("%s %s %s %s", nomeA, escolhaA, nomeB, escolhaB);
+       scanf("%s %s %s %s", nomeA, escolhaA, nomeB, escolhaB); //não precisa colocar o & quando for string;
        scanf("%d %d", &numeroA, &numeroB); 
 
        soma = numeroA + numeroB;
